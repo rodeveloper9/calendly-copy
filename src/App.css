@@ -1,38 +1,251 @@
-.App {
-  text-align: center;
+.calendlyWrap {
+  background: #FBFCFD;
+  height: calc(100vh - 4rem);
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calenderView {
   display: flex;
-  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 1px 8px 0 #00000014;
+  background: #FFFFFF;
+  border: 1px solid #e6e6e6;
+  width: 75%;
+  margin: 4rem auto 30px auto;
+  box-sizing: border-box;
+  min-height: 500px;
+  height: calc(100vh - 6rem);
+}
+.calenderView_details {
+  padding: 30px;
+  box-sizing: border-box;
+  width: 35%;
+  border-right: 1px solid #e6e6e6;
+}
+.calenderView_details_link {
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 25px;
+}
+.calenderView_details_link:hover {
+  background-color: #DEE8FF;
+  border-color: #DEE8FF;
+}
+.calenderView_details_linkIcon {
+  width: 20px;
+}
+.calenderView_details_user {
+  color: #767676;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+}
+.calenderView_details_company {
+  margin: 0;
+  font-size: 28px;
+}
+.calenderView_details_time {
+  display: flex;
+  align-items: center;
+}
+.calenderView_details_timeIcon {
+  width: 26px;
+  margin-right: 5px;
+}
+.calenderView_details_timeAvl {
+  color: #767676;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+/* Calendly Date and Time css */
+.calenderView_dateTime {
+  width: 65%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.calenderView_dateTime_head {
+  font-size: 20px;
+  margin: 0 0 25px 0;
+}
+.calenderView_dateTimeWrap {
+ 
+}
+.calenderView_dateTime_dateView {
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
+}
+.calenderView_dateTime_timeZone {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.calenderView_dateTime_timeZone_icon {
+  width: 20px;
+}
+.calenderView_dateTime_timeZone .css-b62m3t-container {
+  width: calc(100% - 20px);
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* react-datepicker custom CSS */
+.calenderView_dateTime_dateView .calendlyCalender {
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+}
+.calenderView_dateTime_dateView .calendlyCalender .react-datepicker__navigation--previous {left: 75%;}
+.calenderView_dateTime_dateView .calendlyCalender .react-datepicker__navigation--previous .react-datepicker__navigation-icon::before, .calenderView_dateTime_dateView .calendlyCalender .react-datepicker__navigation--next .react-datepicker__navigation-icon::before {
+  border-width: 2px 2px 0 0;
+}
+.calenderView_dateTime_dateView .calendlyCalender .react-datepicker__navigation:hover *::before {
+  border-color: #0168FF;
+}
+.calenderView_dateTime_dateView .calendlyCalender .react-datepicker__header {
+  background-color: transparent;
+  border: none;
+}
+.calenderView_dateTime_dateView .calendlyCalender .react-datepicker__navigation--previous {left: 75%;}
+.calenderView_dateTime_dateView .calendlyCalender .react-datepicker__header .react-datepicker__current-month {
+  text-align: left;
+  color: #1a1a1a;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+.calenderView_dateTime_dateView .calendlyCalender .react-datepicker__month {
+  margin: 0;
+}
+.calenderView_dateTime_dateView .calendlyCalender .react-datepicker__month-container {width: 100%;}
+.calenderView_dateTime_dateView .calendlyCalender .react-datepicker__month-container .react-datepicker__header .react-datepicker__day-names {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.calenderView_dateTime_dateView .calendlyCalender .react-datepicker__month-container .react-datepicker__month .react-datepicker__week {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.calenderView_dateTime_dateView .calendlyCalender .react-datepicker__month-container .react-datepicker__month .react-datepicker__week .react-datepicker__day {
+  padding: 4px;
+  border-radius: 50%;
+  background-color: #DEE8FF;
+  color: #0168FF;
+  font-weight: bold;
+}
+.calenderView_dateTime_dateView .calendlyCalender .react-datepicker__month-container .react-datepicker__month .react-datepicker__week .react-datepicker__day.react-datepicker__day--disabled, .calenderView_dateTime_dateView .calendlyCalender .react-datepicker__month-container .react-datepicker__month .react-datepicker__week .react-datepicker__day:first-child {
+  color: #767676;
+  background-color: transparent;
+  font-weight: normal;
+  pointer-events: none;
+}
+.calenderView_dateTime_dateView .calendlyCalender .react-datepicker__month-container .react-datepicker__month .react-datepicker__week .react-datepicker__day.react-datepicker__day--selected {
+  border-radius: 50%;
+  background-color: #0168FF;
+  color: #fff;
+}
+.calenderView_dateTime_dateView .calendlyCalender .react-datepicker__month-container .react-datepicker__month .react-datepicker__week .react-datepicker__day:hover {
+  background-color: #DEE8FF;
+  color: #0168FF;
+}
+.calenderView_dateTime_dateView .calendlyCalender .react-datepicker__month-container .react-datepicker__month .react-datepicker__week .react-datepicker__day.react-datepicker__day--selected:hover {
+  border-radius: 50%;
+  background-color: #0168FF;
+  color: #fff;
+}
+
+/* time area CSS */
+.calenderView_dateTime_timeView {
+  width: 30%;
+  display: inline-block;
+  margin-left: 30px;
+  box-sizing: border-box;
+}
+.calenderView_dateTime_timeView_dayName {
+  margin: 8px 0 24px 0;
+}
+.calenderView_dateTime_timeView_head {
+  padding: 6px 10px;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 4px;
+}
+.calenderView_dateTime_timeView_list {
+}
+.calenderView_dateTime_timeView_listItem {
+  display: inline-block;
+  width: 100%;
+  list-style: none;
+  color: #0168FF;
+  border: 1px solid #79afff;
+  position: relative;
+  padding: 13px 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  transition-property: width, transform;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.calenderView_dateTime_timeView_listItem:hover {
+  border-color: #0168FF;
+}
+.calenderView_dateTime_timeView_listItem::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 36px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #3FD794;
+}
+.calenderView_dateTime_timeView_listItemWrap {
+  margin: 0;
+}
+.calenderView_dateTime_timeView_listItemCnfrm {
+  display: flex;
+  justify-content: space-between
+}
+.calenderView_dateTime_timeView_listItemCnfrm_time {
+  width: 50%;
+  background-color: #666666;
+  padding: 13px 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-radius: 4px;
+  margin-right: 8px;
+  color: #fff;
+  font-size: 16px;
+}
+.calenderView_dateTime_timeView_listItemCnfrm_btn {
+  width: 50%;
+  cursor: pointer;
+  background-color: #0168FF;
+  padding: 13px 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-radius: 4px;
+  color: #fff;  
+  font-size: 16px;
+}
+.calenderView_dateTime_timeView_listItemCnfrm_btn:hover {
+  background: #8DB4FF;
+}
+
+.calenderView_dateTime_timeZone .css-1s2u09g-control {
+  border: none;
 }
