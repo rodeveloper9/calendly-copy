@@ -1,6 +1,6 @@
 .calendlyWrap {
   background: #FBFCFD;
-  height: calc(100vh - 4rem);
+  height: 100%;
   width: 100vw;
 }
 
@@ -13,8 +13,8 @@
   width: 75%;
   margin: 4rem auto 30px auto;
   box-sizing: border-box;
-  min-height: 500px;
-  height: calc(100vh - 6rem);
+  min-height: 680px;
+  height: 100%;
 }
 .calenderView_details {
   padding: 30px;
@@ -54,11 +54,15 @@
 }
 .calenderView_details_timeIcon {
   width: 26px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .calenderView_details_timeAvl {
   color: #767676;
   font-weight: bold;
+}
+.calenderView_details_timeAvlBl {
+  color: #000;
+  font-weight: 500;
 }
 
 /* Calendly Date and Time css */
