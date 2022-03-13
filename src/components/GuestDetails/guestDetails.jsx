@@ -56,7 +56,7 @@ const GuestDetails = () => {
 
                 <div className="calenderView_inputWrap">
                     <label htmlFor="guestEmail" className="calenderView_inputLabel">Email <sup>*</sup></label>
-                    <input type="email" id="guestEmail" className="calenderView_inputBox" name="guestEmail" value={inputValue.guestEmail} onChange={(e) => handleInputChange(e)} onFocus={() => setGuestEmailError('')} />
+                    <input type="email" id="guestEmail" className={`calenderView_inputBox ${guestEmailError ? 'inError' : ''}`} name="guestEmail" value={inputValue.guestEmail} onChange={(e) => handleInputChange(e)} onFocus={() => setGuestEmailError('')} />
                     {guestEmailError ? <p className="calenderView_inputError">{guestEmailError}</p> : ''}
 
                     <div className="calenderView_addGuestWrap">

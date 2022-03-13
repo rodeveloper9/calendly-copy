@@ -1,0 +1,45 @@
+.calenderView_confirm {
+    text-align: center;
+    width: 100%;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+.calenderView_confirm_details {
+    width: 50%;
+    margin: auto;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+.calenderView_confirm_detailsSection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.calenderView_confirm_head {
+    margin: 0 0 16px;
+    font-size: 20px;
+}
+.calenderView_confirm_headTxt {
+    margin: 0;
+}
+.calenderView_confirm_detailsIcon {
+    width: 26px;
+}
+.calenderView_confirm_detailsHead {
+    margin: 0;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.calenderView_confirm_detailsHeadSm {
+    margin: 0;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.calenderView_confirm_detailsMsg {
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
