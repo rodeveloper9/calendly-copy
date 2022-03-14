@@ -1,0 +1,54 @@
+.calendlyView_list {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.calendlyView_list_headWrap {
+    color: #767676;
+    text-align: center;
+    width: 36%;
+    margin: auto;
+}
+.calendlyView_list_heading {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+.calendlyView_list_headTxt {
+    font-size: 14px;
+    margin: 0;
+}
+.calendlyView_listWrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.calendlyView_listWrap_item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 180px;
+    padding: 20px;
+    border-top: 1px solid #e6e6e6;
+    margin: 20px;
+    width: 40%;
+    text-decoration: none;
+    color: #1A1A1A;
+}
+.calendlyView_listWrap_item:hover {
+    background-color: #E8E8E8;
+}
+.calendlyView_listWrap_itemIcon {
+    width: 30px;
+    margin-right: 10px;
+}
+.calendlyView_listWrap_itemTxt {
+    margin: 0;
+    font-size: 18px;
+    vertical-align: top;
+    font-weight: bold;
+}
+.calendlyView_listWrap_itemArrow {
+    width: 16px;
+}
