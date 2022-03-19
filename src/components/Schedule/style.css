@@ -1,0 +1,423 @@
+/* ================  Sechedule Availibility wrapper ================ */
+.sechduleAvail {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 60px;
+}
+/* ================  Sechedule Options Component CSS ================ */
+.sechduleAvail_heading {
+    margin: 0;
+    font-weight: normal;
+    font-size: 26px;
+}
+.sechduleAvail_headTxt {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 10px 0 20px;
+}
+.sechduleAvail_schTxt {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.sechduleAvail_btnWrap {
+    color: #1A1A1A;
+}
+.sechduleAvail_wrkngHrsBtn {
+    display: inline-block;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    border: solid 1px #CCCCCC;
+    border-radius: 6px;
+    font-weight: normal;
+    background-color: #fff;
+    box-shadow: 0 1px 5px #004a7426;
+    color: #1A1A1A;
+    margin-right: 12px;
+}
+.sechduleAvail_wrkngHrsBtn.active {
+    font-weight: bold;
+}
+.sechduleAvail_wrkngHrsBtn_icon {
+    vertical-align: middle;
+    width: 20px;
+}
+.sechduleAvail_schBtn{
+    box-sizing: border-box;
+    min-height: 44px;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid #1A1A1A;
+    border-radius: 40px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.sechduleAvail_newSchHead {
+    margin: 0 0 24px;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+}
+.react-responsive-modal-modal.sechduleAvail_newSchModal {
+    max-width: 360px;
+    min-width: 360px;
+    background: #ffffff;
+    border: 1px solid #dadada;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px #004a7426;
+}
+.sechduleAvail_newSchInputLabel {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.sechduleAvail_newSchInputField {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 46px;
+    padding: 10px 14px;
+    color: rgb(26, 26, 26);
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-wrap: normal;
+    background: #ffffff;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.sechduleAvail_newSchBtnWrap {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.sechduleAvail_newSchBtn {
+    box-sizing: border-box;
+    min-height: 44px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid #1a1a1a;
+    color: #1a1a1a;
+    border-radius: 40px;
+    cursor: pointer;
+    background: #fff;
+    width: 100%;
+}
+.sechduleAvail_newSchBtn.cancel {
+    font-weight: normal;
+    margin-right: 26px;
+} 
+.sechduleAvail_newSchBtn.create {
+    background: #0168FF;
+    border-color: #0168FF;
+    color: #fff;
+}
+.sechduleAvail_newSchInputField.error{
+    border: 1px solid #b31f1fcc
+}
+.sechduleAvail_newSchFieldErrmsg {
+    margin-top: 5px;
+    color: #C84545;
+    font-size: 14px;
+    white-space: normal;
+}
+
+/* ================  Sechedule Details Component CSS ================ */
+.sechduleAvail_details {
+    width: 100%;
+    margin-top: 16px;
+    background-color: #ffffff;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 5px rgb(0 74 116 / 15%);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.sechduleAvail_detailsHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    box-sizing: border-box;
+    padding-bottom: 0;
+}
+.sechduleAvail_detailsHeadName {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+.sechduleAvail_detailsHeadNameType {
+    font-size: 14px;
+    color: #9F9F9F;
+    margin: 5px 0;
+}
+.sechduleAvail_detailsHeadIcon {
+    width: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.sechduleAvail_detailsHeadSetings {
+    position: relative;
+}
+.sechduleAvail_detailsHeadSetingBtn {
+    background: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+.sechduleAvail_detailsHeadSetingBtn:hover {
+    background: #F2F2F2;
+    transition: all 0.3s;
+}
+.sechduleAvail_detailsHeadSetingIcon {
+    width: 20px;
+    cursor: pointer;
+}
+.sechduleAvail_detailSetings_options {
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 170px;
+    box-sizing: border-box;
+    padding: 6px 0;
+    background: #ffffff;
+    border: 1px solid #00000033;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px #00000033;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.sechduleAvail_detailSetings_optionsBtn {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 14px;
+    color: #1A1A1A;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.sechduleAvail_detailSetings_optionsBtn:hover {
+    background: #E8E8E8;
+}
+.sechduleAvail_detailSetings_optionsBtnIcon {
+    width: 15px;
+    margin-right: 8px;
+}
+.sechduleAvail_activeViewWrap {
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.sechduleAvail_activeEventTime {
+    display: flex;
+}
+.sechduleAvail_activeLabel {
+    margin: 0 0 12px 0;
+    color: #1a1a1a99;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.sechduleAvail_activeWrap {
+    margin-right: 40px;
+}
+.sechduleAvail_activeWrap .css-1s2u09g-control {
+    border: none;
+    cursor: pointer;
+}
+.sechduleAvail_activeWrap .css-1s2u09g-control:hover {
+    background-color: #0069ff11;
+}
+.sechduleAvail_activeWrap .css-1s2u09g-control .css-319lph-ValueContainer {
+    padding-left: 0;
+}
+.sechduleAvail_activeWrap .css-1s2u09g-control .css-319lph-ValueContainer .css-qc6sy-singleValue {
+    color: #0069ff;
+}
+.sechduleAvail_activeWrap .css-1hb7zxy-IndicatorsContainer {
+    display: none;
+}
+.sechduleAvail_viewBtnIcon {
+    width: 18px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.sechduleAvail_viewBtn {
+    border: none;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.sechduleAvail_viewBtn.active {
+    background-color: #fff;
+    box-shadow: 0 1px 6px #00000040;
+}
+
+/* ================= Set weekly hours section CSS ================= */
+.sechduleAvail_setHrsWrap {
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+}
+.sechduleAvail_setHrsSection {
+    width: 64%;
+    border-right: 1px solid #ccc;
+}
+.sechduleAvail_setHrsSection_head {
+    margin: 0;
+    padding: 24px 24px 0;
+    box-sizing: border-box;
+}
+.sechduleAvail_dayHrsWrap{
+}
+.sechduleAvail_dayHrs {
+    display: flex;
+    align-items: center;
+    margin: 0 24px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #CCCCCC;
+}
+.sechduleAvail_dayHrs:last-child{
+    border: none;
+}
+.sechduleAvail_dayHrs_timeSelect {
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+.sechduleAvail_dayHrs_actnBtn {
+    width: 20%;
+    text-align: right;
+}
+.sechduleAvail_dayHrs_timeSelect .css-1hb7zxy-IndicatorsContainer {
+    display: none;
+}
+.sechduleAvail_dayHrs_timeUnavail {
+    color: #1a1a1a99;
+    margin: 13px 0;
+}
+.sechduleAvail_dayHrs .css-1s2u09g-control {
+    min-height: 46px;
+    border-radius: 8px;
+    cursor: text;
+    font-size: 14px;
+    min-width: 100px;
+}
+.sechduleAvail_dayHrs .css-1pahdxg-control {
+    min-height: 46px;
+    border-radius: 8px;
+    min-width: 100px;
+}
+.sechduleAvail_dayHrs .css-26l3qy-menu {
+    box-shadow: 0 1px 5px #004a7426;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+
+.sechduleAvail_dayHrs_dayCheck {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+.sechduleAvail_dayHrs_dayCheckBox {
+    margin: 0 8px 0 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.sechduleAvail_dayHrs_dayCheckName {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.sechduleAvail_dayHrs_timeBtn {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    box-sizing: border-box;
+    color: #414141;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-left: 12px;
+}
+.sechduleAvail_dayHrs_timeBtn:hover {
+    background-color: #F2F2F2;
+}
+.sechduleAvail_dayHrs_timeSelect .sechduleAvail_dayHrs_timeBtn .sechduleAvail_dayHrs_timeBtnIcon {
+    width: 18px;
+    height: 18px;
+}
+.sechduleAvail_dayHrs_timeBtnIcon {
+    width: 24px;
+    height: 24px;
+}
+.sechduleAvail_dayHrs_timeSelectSeperator {
+    margin: 0 8px;
+}
+
+/* ================= Add date overrides section CSS ================= */
+.sechduleAvail_addDateOveride {
+    width: 36%;
+    padding: 24px;
+    box-sizing: border-box;
+}
+.sechduleAvail_addDateOveride_head {
+    margin-top: 0;
+}
+.sechduleAvail_addDateOveride_txt {
+    margin-top: 0;
+    font-size: 16px;
+    color: #1a1a1a99;
+    line-height: 1.5;
+}
+.sechduleAvail_addDateOveride_addBtn {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid #0168FF;
+    border-radius: 40px;
+    width: 100%;
+    background: #fff;
+    color: #0168FF;
+    cursor: pointer;
+}
+.sechduleAvail_addDateOveride_addBtn:hover{
+    background: #F0F5FF
+}
