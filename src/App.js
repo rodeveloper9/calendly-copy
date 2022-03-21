@@ -1,10 +1,12 @@
 import './App.css';
 import Calendly from './components/calendly';
+import MyCalendly from './components/MyCalendly/myCalendly';
 
 function App() {
   return (
     <div className="calendlyWrap">
-      <Calendly />
+      {/* <Calendly /> */}
+      <MyCalendly />
     </div>
   );
 }

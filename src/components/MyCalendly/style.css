@@ -1,0 +1,252 @@
+.myCalendly {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 60px;
+}
+.myCalendly_header {
+    border-bottom: 1px solid #ccc;
+}
+.myCalendly_headerTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.myCalendly_headerTxt {
+    font-size: 26px;
+    margin: 0;
+    font-weight: 400;
+}
+.myCalendly_headerCreateBtn {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid #0168FF;
+    border-radius: 40px;
+    background: #0168FF;
+    color: #fff;
+    cursor: pointer;
+}
+.myCalendly_optionsLink {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 16px;
+    margin-right: 30px;
+    color: #1a1a1a99;
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent; 
+}
+.myCalendly_optionsLink:hover {
+    border-bottom-color: #a8a8a8;
+    color: #1a1a1a;
+}
+.myCalendly_optionsLink.active {
+    border-bottom-color: #0168FF;
+    color: #1a1a1a;
+}
+.myCalendly_tabDetails {
+    margin-top: 30px;
+}
+
+/* Event types component css  */
+.myCalendly_eventsHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+.myCalendly_eventsHeadLeft {
+    display: flex;
+    align-items: center;
+}
+p.myCalendly_eventsHead_userLetr {
+    display: inline-block;
+    border-radius: 50%;
+    background: #ccc;
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    line-height: 41px;
+    overflow: hidden;
+    margin: 0;
+    margin-right: 16px;
+}
+.myCalendly_eventsHead_userDetail {
+    margin: 0;
+}
+.myCalendly_eventsHead_userName, .myCalendly_eventsHead_userEventLink {
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+}
+.myCalendly_eventsHeadRight {
+    display: flex;
+    align-items: center;
+}
+.myCalendly_eventsHead_eventBtn {
+    box-sizing: border-box;
+    padding: 6px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid #0069ff;
+    border-radius: 40px;
+    color: #0069ff;
+    background: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.myCalendly_eventsHead_eventBtn:hover {
+    color: #0060e6;
+    background: #0069ff11;
+}
+.myCalendly_eventsHead_eventSetings {
+    border: none;
+    background: transparent;
+    height: 32px;
+    width: 32px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.myCalendly_eventsHead_eventSetings:hover {
+    background-color: #F2F2F2;
+}
+.myCalendly_eventsHead_eventSetimgsIcon {
+    width: 16px;
+}
+
+/* Event type list Card css */
+.myCalendly_eventsType {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.myCalendly_eventsTypeList {
+    width: 32%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #1a1a1a1a;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 10%);
+    background-color: #fafafa;
+    cursor: pointer;
+    border-top: 5px solid #B2B2B2;
+    margin-right: 18px;
+    margin-bottom: 18px;
+}
+.myCalendly_eventsTypeList:nth-child(3n) {
+    margin-right: 0;
+}
+.myCalendly_eventsTypeList:hover {
+    top: -2px;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%);
+}
+.myCalendly_eventsTypeList_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+.myCalendly_eventsTypeList_headCheckBox {
+    width: 16px;
+    height: 16px;
+}
+.myCalendly_eventsTypeList_headSetings {
+    border: none;
+    background: transparent;
+    height: 36px;
+    width: 36px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.myCalendly_eventsTypeList_headSetings:hover {
+    background-color: #F2F2F2;
+}
+.myCalendly_eventsTypeList_headSetingsIcon {
+    width: 18px;
+}
+.myCalendly_eventsTypeList_body {
+    padding: 8px 12px 20px;
+    box-sizing: border-box;
+}
+.myCalendly_eventsTypeList_bodyHeading {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    color: #1a1a1a99;
+    line-height: 1.4;
+}
+.myCalendly_eventsTypeList_bodyDesc {
+    font-size: 16px;
+    color: #1a1a1a99;
+    margin: 0;
+    line-height: 1.4;
+}
+.myCalendly_eventsTypeList_bodyLink {
+    text-decoration: none;
+    color: #1a1a1a99;
+    pointer-events: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+.myCalendly_eventsTypeList_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border-top: 1px solid #1a1a1a1a;
+}
+.myCalendly_eventsTypeList_footerCopyBtn {
+    border: none;
+    background: transparent;
+    pointer-events: none;
+}
+.myCalendly_eventsTypeList_footerCopyBtnIcon {
+    width: 14px;
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.myCalendly_eventsTypeList_footerTurnBtn {
+    border-radius: 40px;
+    padding: 4px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #1a1a1a;
+    cursor: pointer;
+    pointer-events: none;
+}
+.myCalendly_eventsTypeList.active {
+    border-top-color: #8247F5;
+}
+.myCalendly_eventsTypeList.active .myCalendly_eventsTypeList_bodyLink, .myCalendly_eventsTypeList.active .myCalendly_eventsTypeList_footerCopyBtn  {
+    color: #0069ff;
+    pointer-events: initial;
+    cursor: pointer;
+}
+.myCalendly_eventsTypeList.active .myCalendly_eventsTypeList_footerTurnBtn {
+    border-color: #0069ff;
+    color: #0069ff;
+    pointer-events: initial;
+}
+.myCalendly_eventsTypeList.active .myCalendly_eventsTypeList_footerTurnBtn:hover {
+    background-color: #0069ff11;
+    color: #0060e6;
+}
